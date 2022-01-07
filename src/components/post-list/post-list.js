@@ -22,7 +22,7 @@ const PostList = ({posts}) => {
             </li>
         )
     });
-    console.log(elements);
+
     return (
         <ul className="app-list list-group">
             {elements}
