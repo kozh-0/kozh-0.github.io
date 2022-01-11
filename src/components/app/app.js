@@ -16,6 +16,7 @@ import "./app.css";
 const App = () => {
 
     const data = [
+        {label: 'Chase your dreams!', important: true, id: 'dreams'},
         {label: 'Going to learn React', important: true, id: 'kek'},
         {label: "That's good, mate!", important: false, id: 'lol'},
         {label: 'I need a break...', important: false, id: 'arbirol'}

@@ -31,13 +31,8 @@ export default class PostListItem extends Component {
         const {important, like} = this.state;
         let classNames = "app-list-item d-flex justify-content-between";
 
-        if (important) {
-            classNames += ' important';
-        }
-
-        if (like) {
-            classNames += ' like'
-        }
+        if (important) classNames += ' important';
+        if (like) classNames += ' like';
 
         return (
             <div className={classNames}>

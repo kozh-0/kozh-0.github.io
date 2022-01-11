@@ -10,6 +10,7 @@ import PostListItem from '../post-list-item';
 // label={posts[0].label} - неправильно, если в posts поменять порядок, все полетит
 // const {id, ...itemProps} = item (itemProps объект без id)
 // key={item.id} - чтобы не было ошибки в консоле
+// Если ключ значение пропсов совпадает то {...item} и не надо передавать все пропсы вручную
 const PostList = ({posts}) => {
 
     const elements = posts.map(item => {
