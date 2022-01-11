@@ -1,0 +1,10 @@
+body {
+    background-color: #333;
+}
+.app {
+    border-radius: 1%;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgb(153, 54, 51);
+}
