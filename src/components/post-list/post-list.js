@@ -12,7 +12,7 @@ import PostListItem from '../post-list-item';
 // const {id, ...itemProps} = item (itemProps объект без id)
 // key={item.id} - чтобы не было ошибки в консоле
 // Если ключ значение пропсов совпадает то {...item} и не надо передавать все пропсы вручную
-const PostList = ({posts}) => {
+const PostList = ({posts, onDelete}) => {
 
     const elements = posts.map(item => {
         // const {id, ...itemProps} = item
@@ -20,11 +20,13 @@ const PostList = ({posts}) => {
             <li key={item.id} className="list-group-item">
                 <PostListItem
                 label={item.label}
-                important={item.important}/>
+                important={item.important}
+                onDelete={() => onDelete(item.id)}/>
             </li>
         )
     });
 
+    
     return (
         <ListGroup className="app-list">
             {elements}
